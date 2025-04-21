@@ -1,15 +1,7 @@
 'use client'
-import { useEffect, useState } from 'react'
-import {Switch} from '@/components/ui/switch'
+
 import { PasajerosTable } from '@/components/pasajeros/PasajerosTable'
 import { usePasajeros } from '@/lib/hooks/usePasajeros'
-
-interface Pasajero {
-    id: string
-    nombre: string
-    asiento: number
-    activo: string
-}
 
 export default function PasajerosPage() {
     const {pasajeros, handleToogle} = usePasajeros()
